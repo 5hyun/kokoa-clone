@@ -1,0 +1,45 @@
+.nav {
+  /* 아래에 고정 */
+  position: fixed;
+  bottom: 0;
+  width: 100%; /* 이거 안하면 아이콘이 몰려있다. */
+  background-color: #f9f9fa;
+  padding: 20px 50px;
+  box-sizing: border-box; /* 이거 해야 아래 고정 시 ellipsis도 보인다. */
+  border-top: 1px solid rgba(121, 121, 121, 0.3);
+}
+
+.nav__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav__link {
+  position: relative;
+  color: #2e363e;
+}
+
+.nav__notification {
+  background-color: tomato;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: 600;
+  /* absolute는 가장 가까운 relative를 가진 부모 기준으로 움직인다. */
+  /* 그렇기에 .nav__link에 reltive를 줘야 한다. */
+  position: absolute;
+  left: 15px;
+  bottom: 15px;
+}
+
+.nav__update {
+  color: tomato;
+  font-size: 35px;
+  position: absolute;
+  left: 24px;
+  bottom: 20px;
+}
