@@ -16,10 +16,18 @@
   position: relative;
 }
 
-.screen-header__update {
+.screen-header .fa-cog {
+  position: relative;
+}
+
+.screen-header__setting {
+  position: relative;
+}
+
+.screen-header__setting span {
   position: absolute;
+  left: -8px;
+  bottom: 18px;
   font-size: 30px;
   color: tomato;
-  bottom: 15px;
-  left: 105px;
 }

@@ -33,6 +33,10 @@
   color: var(--gray-color);
 }
 
+.user-component__subtitle i {
+  color: tomato;
+}
+
 /* 다른 페이지에서 크기 다르게 하는 css */
 .user-component__avatar--xl {
   width: 80px;
