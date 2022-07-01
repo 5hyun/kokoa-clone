@@ -13,4 +13,13 @@
 
 .screen-header__icons span {
   margin-left: 25px;
+  position: relative;
+}
+
+.screen-header__update {
+  position: absolute;
+  font-size: 30px;
+  color: tomato;
+  bottom: 15px;
+  left: 105px;
 }

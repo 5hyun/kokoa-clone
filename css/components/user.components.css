@@ -1,3 +1,9 @@
+.user__item {
+  border-bottom: var(--main-border);
+  padding-bottom: 7px;
+  margin-bottom: 7px;
+}
+
 .user-component {
   justify-content: space-between;
 }
@@ -24,7 +30,7 @@
 .user-component__subtitle {
   margin-top: 8px;
   font-size: 17px;
-  color: rgba(0, 0, 0, 0.5);
+  color: var(--gray-color);
 }
 
 /* 다른 페이지에서 크기 다르게 하는 css */
