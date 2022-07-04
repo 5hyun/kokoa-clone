@@ -8,6 +8,7 @@
   padding: 20px 50px;
   box-sizing: border-box; /* 이거 해야 아래 고정 시 ellipsis도 보인다. */
   border-top: 1px solid rgba(121, 121, 121, 0.3);
+  z-index: -1;
 }
 
 .nav__list {
@@ -75,4 +76,8 @@
 
 .nav__btn:last-child {
   animation-delay: 0.8s;
+}
+
+.bar-hidden {
+  margin: 78px;
 }
