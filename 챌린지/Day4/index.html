@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+  </head>
+  <body>
+    <h2>Create An Account</h2>
+    <form>
+      <div>
+        <label>
+          <span>First name</span>
+          <input required placeholder="Fisrt name">
+        </label>
+      </div>
+      <div>
+        <label>
+          <span>Last name</span>
+          <input required placeholder="Last name">
+        </label>
+        </div>
+      <div>
+        <label>
+          <span>Email</span>
+          <input type="email" required placeholder="Email">
+        </label>
+      </div>
+      <div>
+        <label>
+          <span>Username</span>
+          <input required placeholder="Username">
+        </label>
+      </div>
+      <div>
+        <label>
+          <span>Password</span>
+          <input required placeholder="password" minlength=10>
+        </label>
+        <div>
+          <label>
+            <span>Birth date</span>
+            <input required type="date">
+          </label>
+        </div>
+        <div>
+          <label>
+            <span>How happy are you?</span>
+            <input required type="range" list="tickmarks">
+            <datalist id="tickmarks">
+              <option value="0"></option>
+              <option value="10"></option>
+              <option value="20"></option>
+              <option value="30"></option>
+              <option value="40"></option>
+              <option value="50"></option>
+              <option value="60"></option>
+              <option value="70"></option>
+              <option value="80"></option>
+              <option value="90"></option>
+              <option value="100"></option>
+            </datalist>
+          </label>
+        </div>
+        <div>
+          <label>
+            <span>What is your fav. color?</span>
+            <input required type="color">
+          </label>
+        </div>
+      <div>
+        <button>Create Account</button>
+      </div>
+    </form>
+  </body>
+</html>
