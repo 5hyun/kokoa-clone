@@ -1,0 +1,147 @@
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.challenge {
+  width: 50vw;
+  height: 100vh;
+  border: 8px solid #05c6ad;
+  padding-left: 30px;
+}
+
+.header {
+  margin-top: 50px;
+  font-weight: 600;
+  font-size: 30px;
+}
+
+.header i,
+.header span {
+  width: 33%;
+}
+
+.header > span {
+  text-align: center;
+}
+
+/* title */
+.title {
+  display: flex;
+  margin-top: 50px;
+}
+
+.title i {
+  font-size: 50px;
+  color: white;
+  background-color: #ffbe15;
+  padding: 50px;
+  border: 3px solid black;
+  border-radius: 15px;
+  margin-right: 20px;
+}
+
+.title-letter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.title-letter span {
+  margin: 5px 0;
+}
+
+.title-letter > span:first-child,
+.title-letter > span:nth-child(2) {
+  font-size: 40px;
+  font-weight: 800;
+}
+
+.title-letter > span:last-child {
+  font-weight: 600;
+}
+
+/* btn */
+.btn {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-left: -20px;
+}
+
+.btn button {
+  background-color: white;
+  border-bottom-width: 7px;
+
+  padding: 20px;
+}
+
+.btn-play {
+  width: 50%;
+}
+
+.btn-play button {
+  border-radius: 15px;
+  width: 90%;
+
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.btn-heart,
+.btn-plus {
+  width: 15%;
+}
+
+.btn-heart button,
+.btn-plus button {
+  border-radius: 50%;
+  padding: 20px;
+}
+
+/* items */
+.items-item {
+  margin-top: 40px;
+  display: flex;
+}
+
+.items-itme__content {
+  display: flex;
+  flex-direction: column;
+
+  margin-left: 10px;
+}
+
+.items-itme__content > span:first-child {
+  font-weight: 800;
+  font-size: 20px;
+}
+
+.items-itme__content > span:last-child {
+  opacity: 0.5;
+  font-size: 15px;
+  margin-top: 5px;
+}
+
+.items-item__color {
+  width: 40px;
+  height: 40px;
+
+  border-radius: 5px;
+  border: 1px solid black;
+}
+
+.items-item__color1 {
+  background-color: #f95a2a;
+}
+.items-item__color2 {
+  background-color: #ff89bb;
+}
+.items-item__color3 {
+  background-color: #0267e6;
+}
+.items-item__color4 {
+  background-color: #05c6ad;
+}
