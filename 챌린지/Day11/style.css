@@ -1,0 +1,244 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@400;600;700&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Baloo Tamma 2", cursive;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.challenge {
+  width: 45vw;
+
+  border: 1px solid black;
+}
+
+h1 {
+  font-size: 30px;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+/* header */
+.header {
+  padding: 50px 0;
+  font-size: 20px;
+
+  background-color: #ffce33;
+  position: relative;
+}
+
+.header-menu {
+  display: flex;
+  justify-content: center;
+
+  margin: 0 30px;
+}
+
+.header-menu__column {
+  width: 33%;
+}
+
+.header-menu__column:nth-child(2) {
+  display: flex;
+  justify-content: center;
+}
+
+.header-menu__column:last-child {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.header-search input {
+  padding: 20px;
+  border-radius: 30px;
+  width: 70%;
+  border: none;
+  position: absolute;
+
+  bottom: -25px;
+  left: 90px;
+
+  box-shadow: 0px 5px 5px -5px rgba(0, 0, 0, 0.4);
+}
+
+.header-search i {
+  position: absolute;
+  bottom: -8px;
+  left: 450px;
+}
+
+.header-search input::placeholder,
+.header-search i {
+  opacity: 0.3;
+}
+
+/* book */
+.book {
+  margin: 65px 30px;
+}
+
+.book-detail {
+  display: flex;
+}
+
+.book-detail__img {
+  margin-right: 20px;
+}
+
+.book-detail__img img {
+  width: 180px;
+  height: 30vh;
+  border-radius: 10px;
+}
+
+.book-detail__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.book-detail__info-title,
+.book-detail__info-genre,
+.book-detail__info-btn {
+  height: 33%;
+}
+
+.book-detail__info-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.book-detail__info-title > span:first-child {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.book-detail__info-title > span:nth-child(2) {
+  opacity: 0.4;
+}
+
+.book-detail__info-title > span:last-child {
+  color: #ffce33;
+}
+
+.book-detail__info-title > span:last-child > i:last-child {
+  color: rgba(0, 0, 0, 0.1);
+}
+
+.book-detail__info-genre {
+  display: flex;
+  align-items: center;
+
+  margin-top: 20px;
+}
+
+.book-detail__info-genre span {
+  border: none;
+  padding: 15px 25px;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.book-detail__info-genre > span:first-child {
+  margin-right: 15px;
+}
+
+.book-detail__info-btn {
+  display: flex;
+  align-items: flex-end;
+}
+
+.book-detail__info-btn > span:first-child {
+  background-color: #ffce33;
+  font-size: 20px;
+  padding: 25px;
+  margin-right: 60px;
+
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.book-detail__info-btn > span:last-child {
+  background-color: black;
+  color: white;
+
+  padding: 20px 35px;
+  border-radius: 10px;
+}
+
+/* adventures */
+.adventures {
+  margin: 0 30px;
+  margin-bottom: 60px;
+}
+
+.adventures-items {
+  display: flex;
+  overflow-y: auto;
+}
+
+.adventures-items__item {
+  padding: 6px 0;
+  margin-right: 30px;
+}
+
+.adventures img {
+  width: 150px;
+  height: 30vh;
+  border-radius: 10px;
+}
+
+.adventures span {
+  display: flex;
+  justify-content: center;
+}
+
+.adventures span i {
+  margin: 10px 3px;
+  color: #ffce33;
+}
+
+.adventures span > i:last-child {
+  color: rgba(0, 0, 0, 0.1);
+}
+
+/* authors */
+.authors {
+  margin: 0 30px;
+  margin-bottom: 60px;
+}
+
+.authors-detail {
+  display: flex;
+  align-items: center;
+}
+
+.authors-detail__img {
+  margin-right: 20px;
+}
+
+.authors-detail__img img {
+  width: 180px;
+  border-radius: 10px;
+}
+
+.authors-detail__info-name {
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.author-detail__info-content {
+  margin-top: 20px;
+  font-size: 25px;
+  opacity: 0.2;
+}
