@@ -23,9 +23,9 @@ body {
   /* padding: 35px 40px; */
 }
 
-/* screen-left */
-/* screen-left__header */
-.screen-left__header {
+/* left and right header */
+.screen-left__header,
+.screen-right__header {
   display: flex;
   justify-content: space-between;
 
@@ -36,6 +36,7 @@ body {
   padding-bottom: 10px;
 }
 
+/* screen-left */
 /* screen-left__artist */
 .screen-left__artist-img {
   text-align: center;
@@ -168,18 +169,22 @@ body {
   justify-content: center;
   align-items: center;
 
-  margin-top: 20px;
+  width: 405px;
+
+  position: fixed;
+  z-index: 2;
 }
 
 .screen-left__playlist-detail {
   background-color: black;
   color: white;
-  padding: 20px 30px;
+  padding: 15px 30px;
   border-radius: 35px;
 
   display: flex;
   justify-content: space-between;
   align-items: center;
+
   width: 90%;
 }
 
@@ -203,4 +208,114 @@ body {
 
 .screen-left__playlist-detail__icons > i:nth-child(2) {
   font-size: 25px;
+}
+
+/* screen-right */
+/* screen-right__nowMusic */
+.screen-right__nowMusic {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin-top: 50px;
+}
+
+.screen-right__nowMusic img {
+  width: 70%;
+  border-radius: 20px;
+  box-shadow: 0 5px 20px #fbc601;
+
+  margin-bottom: 50px;
+}
+
+.screen-right__nowMusic-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.screen-right__nowMusic span {
+  margin-bottom: 20px;
+}
+
+.screen-right__nowMusic-info > span:first-child {
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.screen-right__nowMusic-info > span:last-child {
+  font-size: 18px;
+  opacity: 0.5;
+}
+
+/* screen-right__musicTime */
+.screen-right__musicTime-time {
+  margin: 0 20px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  opacity: 0.4;
+}
+
+.screen-right__musicTime-icon__past {
+  margin-top: 5px;
+  margin-left: 20px;
+  width: 150px;
+  height: 3px;
+  background-color: black;
+  border-radius: 10px;
+
+  position: relative;
+}
+
+.screen-right__musicTime-icon i {
+  font-size: 6px;
+  position: absolute;
+  bottom: -4px;
+  left: 147px;
+}
+
+.screen-right__musicTime-icon__future {
+  margin: 10px;
+  width: 210px;
+  height: 3px;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+
+  position: absolute;
+  bottom: -10px;
+  left: 145px;
+}
+
+/* screen-right__playbtn */
+.screen-right__playbtn {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.screen-right__playbtn-play {
+  background-color: black;
+  color: white;
+  width: 65px;
+  height: 65px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+}
+
+.screen-right__playbtn > i:nth-child(2),
+.screen-right__playbtn > i:nth-child(4) {
+  font-size: 25px;
+}
+
+.screen-right__playbtn > i:first-child,
+.screen-right__playbtn > i:last-child {
+  opacity: 0.4;
+  font-size: 20px;
 }
